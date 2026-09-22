@@ -5,21 +5,21 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2032%2032%22%3E%3Crect%20width%3D%2232%22%20height%3D%2232%22%20rx%3D%227%22%20fill%3D%22%230d1117%22/%3E%3Cpath%20d%3D%22M9%209h3.4c1.6%200%202.8.5%203.6%201.6.8-1.1%202-1.6%203.6-1.6H23v2.6h-2.7c-1.4%200-2.1.7-2.1%202V22h-1.2c-.8-1.1-2-1.6-3.6-1.6H11V18h2.5c1.4%200%202.1-.7%202.1-2V13.6c0-1.4-.7-2-2.1-2H9z%22%20fill%3D%22%23d4b97a%22/%3E%3C/svg%3E" />
-<title>NORTHLINE REALTY — Премиальная недвижимость Москвы</title>
-<meta name="description" content="Northline Realty — бутик-агентство премиальной недвижимости Москвы. Пентхаусы, резиденции и дома с 2014 года." />
+<title>NORTHLINE REALTY: Премиальная недвижимость Москвы</title>
+<meta name="description" content="Northline Realty: бутик-агентство премиальной недвижимости Москвы. Пентхаусы, резиденции и дома с 2014 года." />
 <link rel="canonical" href="https://detroll1.github.io/northline-realty/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Detroll" />
 <meta property="og:locale" content="ru_RU" />
 <meta property="og:url" content="https://detroll1.github.io/northline-realty/" />
-<meta property="og:title" content="NORTHLINE REALTY — Премиальная недвижимость Москвы" />
-<meta property="og:description" content="Northline Realty — бутик-агентство премиальной недвижимости Москвы. Пентхаусы, резиденции и дома с 2014 года." />
+<meta property="og:title" content="NORTHLINE REALTY: Премиальная недвижимость Москвы" />
+<meta property="og:description" content="Northline Realty: бутик-агентство премиальной недвижимости Москвы. Пентхаусы, резиденции и дома с 2014 года." />
 <meta property="og:image" content="https://detroll1.github.io/northline-realty/assets/screens/og-1200x630.png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="NORTHLINE REALTY — Премиальная недвижимость Москвы" />
-<meta name="twitter:description" content="Northline Realty — бутик-агентство премиальной недвижимости Москвы. Пентхаусы, резиденции и дома с 2014 года." />
+<meta name="twitter:title" content="NORTHLINE REALTY: Премиальная недвижимость Москвы" />
+<meta name="twitter:description" content="Northline Realty: бутик-агентство премиальной недвижимости Москвы. Пентхаусы, резиденции и дома с 2014 года." />
 <meta name="twitter:image" content="https://detroll1.github.io/northline-realty/assets/screens/og-1200x630.png" />
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -56,7 +56,7 @@ tailwind.config = {
   /* полоски-разделители, без них всё сливается */
   .rule{ height:1px; background:#D8D0BE; }
   .rule-dark{ height:1px; background:rgba(245,241,232,.18); }
-  /* шапка — сверху прозрачная, дальше бежевая. блюр 18, меньше — светит */
+  /* шапка: сверху прозрачная, дальше бежевая. блюр 18, меньше: светит */
   #siteHeader{ transition: background .5s ease, color .5s ease, border-color .5s ease, backdrop-filter .5s ease; border-bottom:1px solid transparent; }
   #siteHeader.is-solid{ background:rgba(245,241,232,.88); backdrop-filter:blur(18px); -webkit-backdrop-filter:blur(18px); color:#101010; border-color:#E6DFD1; }
   #siteHeader.is-top{ background:transparent; color:#F5F1E8; }
@@ -65,7 +65,7 @@ tailwind.config = {
   .nav-link{ position:relative; font-size:12px; letter-spacing:.18em; text-transform:uppercase; font-weight:500; transition:opacity .3s; }
   .nav-link::after{ content:""; position:absolute; left:0; bottom:-6px; width:0; height:1px; background:currentColor; transition:width .4s cubic-bezier(.22,1,.36,1); }
   .nav-link:hover::after{ width:100%; }
-  /* hero — картинка слегка едет и зумится при скролле, без этого плоско */
+  /* hero: картинка слегка едет и зумится при скролле, без этого плоско */
   #heroImgWrap{ will-change:transform; }
   #heroImg{ transform:scale(1.08); will-change:transform; transition:transform .1s linear; }
   .hero-fade{ opacity:0; transform:translateY(36px); transition:opacity 1.2s cubic-bezier(.22,1,.36,1), transform 1.2s cubic-bezier(.22,1,.36,1); }
@@ -77,7 +77,7 @@ tailwind.config = {
   .reveal{ opacity:0; transform:translateY(34px); transition:opacity .9s cubic-bezier(.22,1,.36,1), transform .9s cubic-bezier(.22,1,.36,1); }
   .reveal.in{ opacity:1; transform:none; }
   .reveal-d1{ transition-delay:.1s } .reveal-d2{ transition-delay:.2s } .reveal-d3{ transition-delay:.3s }
-  /* карточки — ховер 1.04, больше уже колхозно */
+  /* карточки: ховер 1.04, больше уже колхозно */
   .prop-card .prop-img{ transition:transform 1.2s cubic-bezier(.22,1,.36,1), filter 1.2s; }
   .prop-card:hover .prop-img{ transform:scale(1.04); }
   .prop-card .prop-veil{ opacity:0; transition:opacity .6s ease; }
@@ -86,24 +86,24 @@ tailwind.config = {
   .prop-card:hover .prop-cta{ opacity:1; transform:none; }
   .prop-card .prop-arrow{ opacity:0; transform:translate( -6px,6px); transition:all .55s cubic-bezier(.22,1,.36,1); }
   .prop-card:hover .prop-arrow{ opacity:1; transform:none; }
-  /* слайдер цены — под хромом ок, под файрфоксом пришлось отдельно */
+  /* слайдер цены: под хромом ок, под файрфоксом пришлось отдельно */
   /* TODO: сделать двойной ползунок, пока хватило одного */
   input[type="range"]{ -webkit-appearance:none; appearance:none; width:100%; height:2px; background:linear-gradient(to right, #101010 var(--fill,50%), #D8D0BE var(--fill,50%)); outline:none; border-radius:0; }
   input[type="range"]::-webkit-slider-thumb{ -webkit-appearance:none; width:22px; height:22px; border-radius:50%; background:#F5F1E8; border:1px solid #101010; box-shadow:0 0 0 6px rgba(16,16,16,.06); cursor:pointer; transition:transform .25s, box-shadow .25s; }
   input[type="range"]::-webkit-slider-thumb:hover{ transform:scale(1.12); box-shadow:0 0 0 10px rgba(16,16,16,.06); }
   input[type="range"]::-moz-range-thumb{ width:22px; height:22px; border-radius:50%; background:#F5F1E8; border:1px solid #101010; cursor:pointer; }
   input[type="range"]::-moz-range-track{ height:2px; background:#D8D0BE; }
-  /* купить/арендовать — обычный сегмент, active красится в черный */
+  /* купить/арендовать: обычный сегмент, active красится в черный */
   .seg-btn{ transition:all .35s ease; }
   .seg-btn.active{ background:#101010; color:#F5F1E8; border-color:#101010; }
-  /* селекты без рамок, только нижняя линия — так чище */
+  /* селекты без рамок, только нижняя линия: так чище */
   .lux-select{ appearance:none; -webkit-appearance:none; background:transparent; border:0; border-bottom:1px solid #CFC6B2; padding:12px 28px 12px 0; font-size:14px; width:100%; outline:none; cursor:pointer; background-image:url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L5 5L9 1' stroke='%23101010' stroke-width='1'/%3E%3C/svg%3E"); background-repeat:no-repeat; background-position:right 4px center; }
   .lux-select:focus{ border-color:#101010; }
   /* инпуты-underline, radius убрал специально */
   .lux-input{ background:transparent; border:0; border-bottom:1px solid rgba(16,16,16,.22); padding:14px 0; width:100%; font-size:15px; outline:none; transition:border-color .3s; border-radius:0; }
   .lux-input:focus{ border-color:#101010; }
   .lux-input::placeholder{ color:#9B978E; }
-  /* кнопки — черные заливкой, line-вариант для темных фонов */
+  /* кнопки: черные заливкой, line-вариант для темных фонов */
   .btn-ink{ background:#101010; color:#F5F1E8; transition:background .4s, transform .4s; }
   .btn-ink:hover{ background:#222; }
   .btn-line{ border:1px solid rgba(245,241,232,.45); color:#F5F1E8; transition:all .4s; }
@@ -112,9 +112,9 @@ tailwind.config = {
   .btn-line-dark:hover{ background:#101010; color:#F5F1E8; border-color:#101010; }
   /* линия прогресса в процессе, высота считается в js */
   #processProgress{ transform-origin:top; }
-  /* отзывы — трек едет трансформом, 0.8с чтобы не мельтешило */
+  /* отзывы: трек едет трансформом, 0.8с чтобы не мельтешило */
   #tTrack{ transition:transform .8s cubic-bezier(.22,1,.36,1); }
-  /* модалки — блюр фона 14px, паналь чуть поднимается */
+  /* модалки: блюр фона 14px, паналь чуть поднимается */
   .modal-backdrop{ background:rgba(16,16,16,.45); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px); }
   .modal-panel{ transition:opacity .5s cubic-bezier(.22,1,.36,1), transform .5s cubic-bezier(.22,1,.36,1); }
   .modal-hidden .modal-panel{ opacity:0; transform:translateY(28px) scale(.985); }
@@ -122,25 +122,25 @@ tailwind.config = {
   .modal-root{ transition:opacity .4s ease; }
   /* тост снизу, прячется транcформом */
   #toast{ transition:transform .5s cubic-bezier(.22,1,.36,1), opacity .5s; }
-  /* плавающая кнопка, появляется после hero — логика в onScroll */
+  /* плавающая кнопка, появляется после hero: логика в onScroll */
   #floatBtn{ transition:opacity .5s, transform .5s; }
-  /* сердечко в избранном — заливается когда active */
+  /* сердечко в избранном: заливается когда active */
   .fav-btn svg{ transition:all .3s; }
   .fav-btn.active svg{ fill:#101010; stroke:#101010; }
   .fav-btn.active{ background:#F5F1E8 !important; }
   /* затемнение снизу на hero чтобы текст читался, без градиентной жести */
   .legibility{ background:linear-gradient(to top, rgba(10,10,10,.58) 0%, rgba(10,10,10,.18) 42%, rgba(10,10,10,0) 70%); }
   .legibility-top{ background:linear-gradient(to bottom, rgba(10,10,10,.38) 0%, rgba(10,10,10,0) 32%); }
-  /* бегущая строка с районами, 32с — медленнее уже скучно */
+  /* бегущая строка с районами, 32с: медленнее уже скучно */
   @keyframes marquee { from{ transform:translateX(0)} to{ transform:translateX(-50%)} }
   .marquee-track{ animation:marquee 32s linear infinite; }
   /* фокус видно только с клавы, так и задумано */
   :focus-visible{ outline:1.5px solid #526055; outline-offset:3px; }
   button:disabled{ opacity:.4; cursor:not-allowed; }
-  /* журнал — картинка зумится чуть-чуть */
+  /* журнал: картинка зумится чуть-чуть */
   .journal-card img{ transition:transform 1.1s cubic-bezier(.22,1,.36,1); }
   .journal-card:hover img{ transform:scale(1.05); }
-  /* команда — чб чуть приглушил, на ховере цвет */
+  /* команда: чб чуть приглушил, на ховере цвет */
   .team-card img{ transition:transform 1.1s cubic-bezier(.22,1,.36,1), filter .8s; filter:grayscale(18%); }
   .team-card:hover img{ transform:scale(1.03); filter:grayscale(0%); }
   @media (prefers-reduced-motion: reduce){
@@ -155,7 +155,7 @@ tailwind.config = {
 <body class="bg-ivory text-ink antialiased">
 <div class="detroll-wm" aria-hidden="true"><b>Design&nbsp;&amp;&nbsp;code</b>&nbsp;·&nbsp;Detroll&nbsp;©&nbsp;2026</div>
 
-<!-- TOAST — всплывашка снизу, прячется сама через 2.4с -->
+<!-- TOAST: всплывашка снизу, прячется сама через 2.4с -->
 <div id="toast" class="fixed left-1/2 bottom-24 md:bottom-10 z-[120] -translate-x-1/2 translate-y-6 opacity-0 pointer-events-none">
   <div class="bg-ink text-ivory text-[13px] tracking-wide px-6 py-3.5 flex items-center gap-3 shadow-2xl">
     <span class="w-1.5 h-1.5 rounded-full bg-ivory/80 inline-block"></span>
@@ -163,11 +163,11 @@ tailwind.config = {
   </div>
 </div>
 
-<!-- HEADER — лого слева, навигация справа. на мобиле бургер -->
+<!-- HEADER: лого слева, навигация справа. на мобиле бургер -->
 <header id="siteHeader" class="is-top fixed top-0 left-0 right-0 z-[90]">
   <div class="max-w-[1560px] mx-auto px-6 md:px-10 lg:px-14">
     <div class="flex items-center justify-between h-[72px] md:h-[84px]">
-      <a href="#top" class="flex items-baseline gap-3 group" aria-label="Northline Realty — на главную">
+      <a href="#top" class="flex items-baseline gap-3 group" aria-label="Northline Realty: на главную">
         <span class="text-[18px] md:text-[20px] font-semibold tracking-[0.22em]">NORTHLINE</span>
         <span class="hidden sm:inline text-[10px] tracking-[0.28em] opacity-60 font-medium">REALTY · МОСКВА</span>
       </a>
@@ -215,7 +215,7 @@ tailwind.config = {
 </div>
 
 <main id="top">
-<!-- HERO — фото почти на весь экран, текст поверх. скролл-зум в js -->
+<!-- HERO: фото почти на весь экран, текст поверх. скролл-зум в js -->
 <section id="hero" class="relative h-[100svh] min-h-[640px] overflow-hidden bg-ink text-ivory">
   <div id="heroImgWrap" class="absolute inset-0">
     <img id="heroImg" src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2400&auto=format&fit=crop" alt="Роскошная гостиная пентхауса в Москве" class="w-full h-full object-cover" fetchpriority="high" />
@@ -224,7 +224,7 @@ tailwind.config = {
   <div class="absolute inset-0 legibility pointer-events-none"></div>
 
   <div class="relative z-10 h-full max-w-[1560px] mx-auto px-6 md:px-10 lg:px-14 flex flex-col justify-end pb-10 md:pb-12 pt-28">
-    <p class="hero-fade text-[11px] md:text-[12px] tracking-[0.32em] uppercase opacity-80 mb-5 md:mb-7" style="transition-delay:.15s">Northline Realty — Москва · с 2014 года</p>
+    <p class="hero-fade text-[11px] md:text-[12px] tracking-[0.32em] uppercase opacity-80 mb-5 md:mb-7" style="transition-delay:.15s">Northline Realty: Москва · с 2014 года</p>
     <h1 class="serif font-medium leading-[0.98] text-[46px] sm:text-[64px] md:text-[92px] lg:text-[118px] max-w-[12ch]">
       <span class="hero-line"><span>Пространства,</span></span>
       <span class="hero-line"><span class="italic font-normal">в которые</span></span>
@@ -259,11 +259,11 @@ tailwind.config = {
   </div>
 </div>
 
-<!-- ПОДБОР — фильтры, результат сразу перерисовывается -->
+<!-- ПОДБОР: фильтры, результат сразу перерисовывается -->
 <section id="search" class="max-w-[1560px] mx-auto px-6 md:px-10 lg:px-14 pt-20 md:pt-28 pb-6">
   <div class="grid lg:grid-cols-12 gap-10 lg:gap-14">
     <div class="lg:col-span-4 reveal">
-      <p class="text-[11px] tracking-[0.3em] uppercase text-warm mb-5">01 — Подбор</p>
+      <p class="text-[11px] tracking-[0.3em] uppercase text-warm mb-5">01: Подбор</p>
       <h2 class="serif text-[38px] md:text-[52px] leading-[1.02]">Найдём ваше<br/><span class="italic">пространство.</span></h2>
       <p class="mt-5 text-[15px] leading-relaxed text-ink/60 max-w-[32ch]">Восемь адресов из закрытого каталога. Фильтры обновляют подбор мгновенно.</p>
       <p class="mt-8 text-[13px] tracking-[0.14em] uppercase text-ink/50"><span id="resultCount" class="text-ink font-semibold text-[15px]">8</span> &nbsp;объектов найдено</p>
@@ -302,7 +302,7 @@ tailwind.config = {
             <select id="areaSel" class="lux-select" aria-label="Площадь">
               <option value="all">Любая</option>
               <option value="0-120">до 120 м²</option>
-              <option value="120-200">120 — 200 м²</option>
+              <option value="120-200">120: 200 м²</option>
               <option value="200-9999">от 200 м²</option>
             </select>
           </div>
@@ -324,25 +324,25 @@ tailwind.config = {
   </div>
 </section>
 
-<!-- СЕТКА ОБЪЕКТОВ — рендерится из js, руками тут ничего не трогать -->
+<!-- СЕТКА ОБЪЕКТОВ: рендерится из js, руками тут ничего не трогать -->
 <section id="objects" class="max-w-[1560px] mx-auto px-6 md:px-10 lg:px-14 pt-10 md:pt-16 pb-10">
   <div class="flex items-end justify-between mb-8 md:mb-12 reveal">
     <h3 class="serif text-[28px] md:text-[40px] leading-tight">Избранные адреса <span class="italic text-warm">сезона</span></h3>
-    <span class="hidden md:block text-[11px] tracking-[0.28em] uppercase text-warm">N° 01 — 08</span>
+    <span class="hidden md:block text-[11px] tracking-[0.28em] uppercase text-warm">N° 01: 08</span>
   </div>
   <div id="propertyGrid" class="grid grid-cols-1 md:grid-cols-2 gap-x-6 lg:gap-x-10 gap-y-12 md:gap-y-16" aria-live="polite"></div>
   <div id="emptyState" class="hidden text-center py-24 border border-dashed border-ink/20 mt-4">
     <p class="serif text-[30px] italic mb-3">Ничего не найдено</p>
-    <p class="text-sm text-ink/55 mb-7">Попробуйте смягчить фильтры — или доверьте поиск брокеру.</p>
+    <p class="text-sm text-ink/55 mb-7">Попробуйте смягчить фильтры, или доверьте поиск брокеру.</p>
     <button id="emptyReset" class="btn-line-dark px-8 py-3.5 text-[12px] tracking-[0.16em] uppercase font-semibold">Сбросить фильтры</button>
   </div>
 </section>
 
-<!-- ФЛАГМАН — самый дорогой экран, фото справа, текст слева -->
+<!-- ФЛАГМАН: самый дорогой экран, фото справа, текст слева -->
 <section id="featured" class="mt-16 md:mt-24 bg-ink text-ivory overflow-hidden">
   <div class="max-w-[1560px] mx-auto grid lg:grid-cols-2 min-h-[92vh]">
     <div class="flex flex-col justify-center px-6 md:px-12 lg:px-16 xl:px-24 py-16 lg:py-24 order-2 lg:order-1">
-      <p class="reveal text-[11px] tracking-[0.32em] uppercase text-ivory/50 mb-7">Исключительный адрес — N° 01</p>
+      <p class="reveal text-[11px] tracking-[0.32em] uppercase text-ivory/50 mb-7">Исключительный адрес: N° 01</p>
       <h2 class="reveal serif text-[42px] md:text-[64px] xl:text-[76px] leading-[1.0]">Пентхаус<br/><span class="italic font-normal">на Остоженке</span></h2>
       <div class="reveal reveal-d1 rule-dark my-8 md:my-10"></div>
       <dl class="reveal reveal-d1 grid grid-cols-2 gap-y-5 gap-x-8 text-[14px] font-light">
@@ -363,7 +363,7 @@ tailwind.config = {
       </div>
     </div>
     <div class="relative min-h-[52vh] lg:min-h-0 order-1 lg:order-2 overflow-hidden group">
-      <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=2000&auto=format&fit=crop" alt="Пентхаус на Остоженке — терраса и панорамные окна" class="absolute inset-0 w-full h-full object-cover transition-transform duration-[1.8s] group-hover:scale-[1.04]" loading="lazy" />
+      <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=2000&auto=format&fit=crop" alt="Пентхаус на Остоженке: терраса и панорамные окна" class="absolute inset-0 w-full h-full object-cover transition-transform duration-[1.8s] group-hover:scale-[1.04]" loading="lazy" />
       <div class="absolute top-6 left-6 md:top-8 md:left-8 bg-ivory text-ink text-[11px] tracking-[0.22em] uppercase px-4 py-2.5">Закрытый показ</div>
       <div class="absolute bottom-6 right-6 md:bottom-8 md:right-8 text-ivory/90 text-[11px] tracking-[0.24em] uppercase">Остоженка · 55.74° N</div>
     </div>
@@ -374,9 +374,9 @@ tailwind.config = {
 <section id="about" class="max-w-[1560px] mx-auto px-6 md:px-10 lg:px-14 py-24 md:py-36">
   <div class="grid lg:grid-cols-12 gap-12">
     <div class="lg:col-span-7 reveal">
-      <p class="text-[11px] tracking-[0.3em] uppercase text-warm mb-6">02 — Философия</p>
+      <p class="text-[11px] tracking-[0.3em] uppercase text-warm mb-6">02: Философия</p>
       <h2 class="serif text-[40px] md:text-[64px] leading-[1.04]">Мы не продаём<br/>квадратные метры.</h2>
-      <p class="mt-8 text-[16px] md:text-[18px] leading-[1.75] text-ink/70 font-light max-w-[58ch]">Мы подбираем ритм жизни: свет утром в спальне, тишину двора, пять минут до парка, вид, к которому возвращаешься мыслями. Northline — бутик-бюро: один брокер ведёт вас от первого звонка до ключей и остаётся рядом после сделки.</p>
+      <p class="mt-8 text-[16px] md:text-[18px] leading-[1.75] text-ink/70 font-light max-w-[58ch]">Мы подбираем ритм жизни: свет утром в спальне, тишину двора, пять минут до парка, вид, к которому возвращаешься мыслями. Northline: бутик-бюро: один брокер ведёт вас от первого звонка до ключей и остаётся рядом после сделки.</p>
       <p class="mt-5 text-[16px] md:text-[18px] leading-[1.75] text-ink/70 font-light max-w-[58ch]">Работаем с ограниченным числом адресов и не гонимся за витриной. Поэтому нас рекомендуют.</p>
     </div>
     <div class="lg:col-span-5 flex flex-col justify-end">
@@ -394,7 +394,7 @@ tailwind.config = {
   <div class="max-w-[1560px] mx-auto px-6 md:px-10 lg:px-14 py-20 md:py-28">
     <div class="flex items-end justify-between mb-12 md:mb-16 reveal">
       <h2 class="serif text-[34px] md:text-[52px]">Три направления.<br/><span class="italic text-moss">Одна точность.</span></h2>
-      <span class="hidden md:block text-[11px] tracking-[0.28em] uppercase text-warm">03 — Услуги</span>
+      <span class="hidden md:block text-[11px] tracking-[0.28em] uppercase text-warm">03: Услуги</span>
     </div>
     <div class="grid md:grid-cols-3 gap-px bg-[#D8D0BE] border border-[#D8D0BE]">
       <a href="#contact" class="reveal group bg-ivory p-9 md:p-12 min-h-[300px] flex flex-col justify-between hover:bg-ink hover:text-ivory transition-colors duration-500">
@@ -415,15 +415,15 @@ tailwind.config = {
 
 <!-- PROCESS -->
 <section id="process" class="max-w-[1560px] mx-auto px-6 md:px-10 lg:px-14 py-24 md:py-36">
-  <p class="reveal text-[11px] tracking-[0.3em] uppercase text-warm mb-5">04 — Процесс</p>
+  <p class="reveal text-[11px] tracking-[0.3em] uppercase text-warm mb-5">04: Процесс</p>
   <h2 class="reveal serif text-[38px] md:text-[60px] leading-[1.03] max-w-[16ch]">От первого звонка <span class="italic">до ключей.</span></h2>
   <div class="mt-14 md:mt-20 grid lg:grid-cols-12 gap-10">
     <div class="hidden lg:flex lg:col-span-1 justify-center"><div class="w-px bg-[#D8D0BE] relative flex-1 max-w-px"><div id="processProgress" class="absolute top-0 left-0 w-full bg-ink" style="height:0%"></div></div></div>
     <div class="lg:col-span-11 divide-y divide-[#D8D0BE] border-y border-[#D8D0BE]">
-      <div class="process-step reveal grid md:grid-cols-12 gap-4 py-9 md:py-12 items-baseline"><span class="md:col-span-2 serif italic text-[20px] text-warm">01</span><h3 class="md:col-span-4 serif text-[28px] md:text-[34px]">Знакомство</h3><p class="md:col-span-6 text-ink/60 leading-relaxed font-light">Часовой разговор о привычках, маршрутах и свете. Фиксируем критерии — и отсекаем лишнее.</p></div>
+      <div class="process-step reveal grid md:grid-cols-12 gap-4 py-9 md:py-12 items-baseline"><span class="md:col-span-2 serif italic text-[20px] text-warm">01</span><h3 class="md:col-span-4 serif text-[28px] md:text-[34px]">Знакомство</h3><p class="md:col-span-6 text-ink/60 leading-relaxed font-light">Часовой разговор о привычках, маршрутах и свете. Фиксируем критерии: и отсекаем лишнее.</p></div>
       <div class="process-step reveal grid md:grid-cols-12 gap-4 py-9 md:py-12 items-baseline"><span class="md:col-span-2 serif italic text-[20px] text-warm">02</span><h3 class="md:col-span-4 serif text-[28px] md:text-[34px]">Подбор</h3><p class="md:col-span-6 text-ink/60 leading-relaxed font-light">До 7 точных вариантов, включая закрытые. Личные просмотры с брокером, без суеты.</p></div>
       <div class="process-step reveal grid md:grid-cols-12 gap-4 py-9 md:py-12 items-baseline"><span class="md:col-span-2 serif italic text-[20px] text-warm">03</span><h3 class="md:col-span-4 serif text-[28px] md:text-[34px]">Переговоры</h3><p class="md:col-span-6 text-ink/60 leading-relaxed font-light">Юридическая проверка, торг, структура сделки. Вы всегда знаете следующую ставку.</p></div>
-      <div class="process-step reveal grid md:grid-cols-12 gap-4 py-9 md:py-12 items-baseline"><span class="md:col-span-2 serif italic text-[20px] text-warm">04</span><h3 class="md:col-span-4 serif text-[28px] md:text-[34px]">Сделка</h3><p class="md:col-span-6 text-ink/60 leading-relaxed font-light">Нотариат, регистрация, передача ключей. Дизайн, переезд и управление — по запросу.</p></div>
+      <div class="process-step reveal grid md:grid-cols-12 gap-4 py-9 md:py-12 items-baseline"><span class="md:col-span-2 serif italic text-[20px] text-warm">04</span><h3 class="md:col-span-4 serif text-[28px] md:text-[34px]">Сделка</h3><p class="md:col-span-6 text-ink/60 leading-relaxed font-light">Нотариат, регистрация, передача ключей. Дизайн, переезд и управление: по запросу.</p></div>
     </div>
   </div>
 </section>
@@ -432,24 +432,24 @@ tailwind.config = {
 <section id="team" class="bg-[#111111] text-ivory">
   <div class="max-w-[1560px] mx-auto px-6 md:px-10 lg:px-14 py-24 md:py-32">
     <div class="flex items-end justify-between mb-12 reveal">
-      <div><p class="text-[11px] tracking-[0.3em] uppercase text-ivory/40 mb-5">05 — Брокеры</p><h2 class="serif text-[36px] md:text-[56px] leading-tight">Лица, которым <span class="italic">доверяют ключи.</span></h2></div>
+      <div><p class="text-[11px] tracking-[0.3em] uppercase text-ivory/40 mb-5">05: Брокеры</p><h2 class="serif text-[36px] md:text-[56px] leading-tight">Лица, которым <span class="italic">доверяют ключи.</span></h2></div>
       <span class="hidden md:block text-[11px] tracking-[0.28em] uppercase text-ivory/35">4 партнёра</span>
     </div>
     <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
       <article class="team-card reveal group">
-        <div class="overflow-hidden aspect-[3/4] bg-white/5"><img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=900&auto=format&fit=crop" alt="Александр Норт — управляющий партнёр" class="w-full h-full object-cover" loading="lazy"/></div>
+        <div class="overflow-hidden aspect-[3/4] bg-white/5"><img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=900&auto=format&fit=crop" alt="Александр Норт: управляющий партнёр" class="w-full h-full object-cover" loading="lazy"/></div>
         <h3 class="serif text-[22px] mt-5">Александр Норт</h3><p class="text-[12px] tracking-[0.18em] uppercase text-ivory/45 mt-1.5">Управляющий партнёр · Остоженка</p>
       </article>
       <article class="team-card reveal reveal-d1 group lg:mt-10">
-        <div class="overflow-hidden aspect-[3/4] bg-white/5"><img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=900&auto=format&fit=crop" alt="Елена Ветрова — брокер по резиденциям" class="w-full h-full object-cover" loading="lazy"/></div>
+        <div class="overflow-hidden aspect-[3/4] bg-white/5"><img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=900&auto=format&fit=crop" alt="Елена Ветрова: брокер по резиденциям" class="w-full h-full object-cover" loading="lazy"/></div>
         <h3 class="serif text-[22px] mt-5">Елена Ветрова</h3><p class="text-[12px] tracking-[0.18em] uppercase text-ivory/45 mt-1.5">Резиденции · Хамовники</p>
       </article>
       <article class="team-card reveal reveal-d2 group">
-        <div class="overflow-hidden aspect-[3/4] bg-white/5"><img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=900&auto=format&fit=crop" alt="Марк Савельев — инвестиции и новостройки" class="w-full h-full object-cover" loading="lazy"/></div>
+        <div class="overflow-hidden aspect-[3/4] bg-white/5"><img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=900&auto=format&fit=crop" alt="Марк Савельев: инвестиции и новостройки" class="w-full h-full object-cover" loading="lazy"/></div>
         <h3 class="serif text-[22px] mt-5">Марк Савельев</h3><p class="text-[12px] tracking-[0.18em] uppercase text-ivory/45 mt-1.5">Инвестиции · Сити</p>
       </article>
       <article class="team-card reveal reveal-d3 group lg:mt-10">
-        <div class="overflow-hidden aspect-[3/4] bg-white/5"><img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=900&auto=format&fit=crop" alt="София Ланге — аренда и relocation" class="w-full h-full object-cover" loading="lazy"/></div>
+        <div class="overflow-hidden aspect-[3/4] bg-white/5"><img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=900&auto=format&fit=crop" alt="София Ланге: аренда и relocation" class="w-full h-full object-cover" loading="lazy"/></div>
         <h3 class="serif text-[22px] mt-5">София Ланге</h3><p class="text-[12px] tracking-[0.18em] uppercase text-ivory/45 mt-1.5">Аренда · Relocation</p>
       </article>
     </div>
@@ -458,20 +458,20 @@ tailwind.config = {
 
 <!-- TESTIMONIALS -->
 <section id="reviews" class="max-w-[1100px] mx-auto px-6 md:px-10 py-24 md:py-32 text-center">
-  <p class="reveal text-[11px] tracking-[0.3em] uppercase text-warm mb-8">06 — Голоса клиентов</p>
+  <p class="reveal text-[11px] tracking-[0.3em] uppercase text-warm mb-8">06: Голоса клиентов</p>
   <div class="reveal overflow-hidden" id="tViewport">
     <div id="tTrack" class="flex">
       <figure class="w-full shrink-0 px-2 md:px-10">
         <blockquote class="serif text-[28px] md:text-[44px] leading-[1.25]">«Northline поняли, что мы ищем, раньше, чем мы сами это сформулировали.»</blockquote>
-        <figcaption class="mt-7 text-[12px] tracking-[0.22em] uppercase text-ink/50">Анна и Дмитрий — покупатели · Хамовники</figcaption>
+        <figcaption class="mt-7 text-[12px] tracking-[0.22em] uppercase text-ink/50">Анна и Дмитрий: покупатели · Хамовники</figcaption>
       </figure>
       <figure class="w-full shrink-0 px-2 md:px-10">
-        <blockquote class="serif text-[28px] md:text-[44px] leading-[1.25]">«Три просмотра — и ключи. Ни одного лишнего звонка за два месяца.»</blockquote>
-        <figcaption class="mt-7 text-[12px] tracking-[0.22em] uppercase text-ink/50">Игорь С. — владелец · Остоженка</figcaption>
+        <blockquote class="serif text-[28px] md:text-[44px] leading-[1.25]">«Три просмотра: и ключи. Ни одного лишнего звонка за два месяца.»</blockquote>
+        <figcaption class="mt-7 text-[12px] tracking-[0.22em] uppercase text-ink/50">Игорь С.: владелец · Остоженка</figcaption>
       </figure>
       <figure class="w-full shrink-0 px-2 md:px-10">
         <blockquote class="serif text-[28px] md:text-[44px] leading-[1.25]">«Продали на 12% выше рынка. Спокойно, точно, без компромиссов.»</blockquote>
-        <figcaption class="mt-7 text-[12px] tracking-[0.22em] uppercase text-ink/50">Марина В. — продавец · Патриаршие</figcaption>
+        <figcaption class="mt-7 text-[12px] tracking-[0.22em] uppercase text-ink/50">Марина В.: продавец · Патриаршие</figcaption>
       </figure>
     </div>
   </div>
@@ -498,13 +498,13 @@ tailwind.config = {
         <div class="overflow-hidden aspect-[4/5]"><img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?q=80&w=1000&auto=format&fit=crop" alt="Где покупать квартиру в Москве в 2026" class="w-full h-full object-cover" loading="lazy"/></div>
         <p class="text-[11px] tracking-[0.24em] uppercase text-warm mt-6">Гид · 12 мин</p>
         <h3 class="serif text-[24px] md:text-[27px] leading-snug mt-2 group-hover:italic transition-all">Где покупать квартиру в Москве в 2026</h3>
-        <p class="text-[14px] text-ink/55 mt-3 font-light leading-relaxed">Семь улиц, которые переоценят рынок. И три — которых стоит избегать.</p>
+        <p class="text-[14px] text-ink/55 mt-3 font-light leading-relaxed">Семь улиц, которые переоценят рынок. И три: которых стоит избегать.</p>
       </article>
       <article class="journal-card reveal reveal-d1 group cursor-pointer md:mt-12">
         <div class="overflow-hidden aspect-[4/5]"><img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=1000&auto=format&fit=crop" alt="Пять районов для семейной жизни" class="w-full h-full object-cover" loading="lazy"/></div>
         <p class="text-[11px] tracking-[0.24em] uppercase text-warm mt-6">Районы · 8 мин</p>
         <h3 class="serif text-[24px] md:text-[27px] leading-snug mt-2 group-hover:italic transition-all">5 районов для семейной жизни</h3>
-        <p class="text-[14px] text-ink/55 mt-3 font-light leading-relaxed">Школы, парки, тишина дворов — честный рейтинг от брокеров.</p>
+        <p class="text-[14px] text-ink/55 mt-3 font-light leading-relaxed">Школы, парки, тишина дворов: честный рейтинг от брокеров.</p>
       </article>
       <article class="journal-card reveal reveal-d2 group cursor-pointer">
         <div class="overflow-hidden aspect-[4/5]"><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1000&auto=format&fit=crop" alt="Как выбрать квартиру с панорамным видом" class="w-full h-full object-cover" loading="lazy"/></div>
@@ -520,17 +520,17 @@ tailwind.config = {
 <section id="contact" class="bg-moss text-ivory">
   <div class="max-w-[1560px] mx-auto grid lg:grid-cols-2">
     <div class="px-6 md:px-12 lg:px-16 xl:px-20 py-20 md:py-28">
-      <p class="reveal text-[11px] tracking-[0.3em] uppercase text-ivory/50 mb-6">07 — Контакт</p>
+      <p class="reveal text-[11px] tracking-[0.3em] uppercase text-ivory/50 mb-6">07: Контакт</p>
       <h2 class="reveal serif text-[40px] md:text-[62px] leading-[1.03]">Расскажите,<br/>какое пространство<br/><span class="italic">вы ищете.</span></h2>
       <div class="reveal mt-10 space-y-3 text-[15px] font-light text-ivory/80">
         <p>Москва, Патриаршие пруды, Малый Патриарший, 5</p>
         <p><a href="tel:+74950000000" class="hover:text-white">+7 (495) 000-00-00</a> · <a href="mailto:hello@northline.ru" class="underline underline-offset-4 decoration-white/30 hover:decoration-white">hello@northline.ru</a></p>
-        <p class="text-ivory/50 text-[13px] tracking-[0.14em] uppercase">Ежедневно 09:00 — 21:00</p>
+        <p class="text-ivory/50 text-[13px] tracking-[0.14em] uppercase">Ежедневно 09:00–21:00</p>
       </div>
       <!-- stylized location block -->
       <div class="reveal mt-10 border border-white/15 p-6 flex items-center gap-6">
         <div class="w-16 h-16 shrink-0 border border-white/25 rounded-full flex items-center justify-center"><span class="w-2 h-2 rounded-full bg-ivory animate-pulse"></span></div>
-        <div><p class="text-[12px] tracking-[0.22em] uppercase text-ivory/55">Шоурум</p><p class="serif text-[20px] mt-1">Патриаршие пруды — 200 м от воды</p></div>
+        <div><p class="text-[12px] tracking-[0.22em] uppercase text-ivory/55">Шоурум</p><p class="serif text-[20px] mt-1">Патриаршие пруды: 200 м от воды</p></div>
         <a href="https://yandex.ru/maps/?text=%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%9C%D0%B0%D0%BB%D1%8B%D0%B9%20%D0%9F%D0%B0%D1%82%D1%80%D0%B8%D0%B0%D1%80%D1%88%D0%B8%D0%B9%205" target="_blank" rel="noopener" class="ml-auto text-[12px] tracking-[0.16em] uppercase underline underline-offset-4 decoration-white/30">Карта →</a>
       </div>
     </div>
@@ -544,10 +544,10 @@ tailwind.config = {
           <div><label for="fGoal" class="block text-[11px] tracking-[0.22em] uppercase text-warm mb-1">Что ищете?</label>
             <select id="fGoal" class="lux-select" name="goal"><option>Купить пентхаус</option><option>Купить квартиру</option><option>Купить дом</option><option>Арендовать</option><option>Продать объект</option></select></div>
           <div><label for="fBudget" class="block text-[11px] tracking-[0.22em] uppercase text-warm mb-1">Бюджет</label>
-            <select id="fBudget" class="lux-select" name="budget"><option>до 80 млн ₽</option><option selected>80 — 150 млн ₽</option><option>150 — 250 млн ₽</option><option>250 млн ₽ +</option><option>Аренда — обсудим</option></select></div>
+            <select id="fBudget" class="lux-select" name="budget"><option>до 80 млн ₽</option><option selected>80: 150 млн ₽</option><option>150: 250 млн ₽</option><option>250 млн ₽ +</option><option>Аренда: обсудим</option></select></div>
         </div>
         <div class="mt-7"><label for="fMsg" class="block text-[11px] tracking-[0.22em] uppercase text-warm mb-1">Комментарий</label><textarea id="fMsg" name="message" rows="3" class="lux-input resize-none" placeholder="Район, метраж, сроки, детали…"></textarea></div>
-        <p id="formError" class="hidden mt-5 text-[13px] text-red-900/80">Заполните имя и телефон — брокер не сможет связаться без них.</p>
+        <p id="formError" class="hidden mt-5 text-[13px] text-red-900/80">Заполните имя и телефон: брокер не сможет связаться без них.</p>
         <button type="submit" class="btn-ink w-full mt-9 py-5 text-[12px] tracking-[0.2em] uppercase font-semibold">Связаться с брокером</button>
         <p class="mt-4 text-[12px] text-ink/45 leading-relaxed">Нажимая кнопку, вы соглашаетесь с политикой обработки персональных данных.</p>
       </form>
@@ -560,7 +560,7 @@ tailwind.config = {
   <div class="max-w-[1560px] mx-auto px-6 md:px-10 lg:px-14 pt-16 pb-28 md:pb-16">
     <div class="flex flex-col md:flex-row md:items-end justify-between gap-8 pb-10 border-b border-white/10">
       <p class="serif text-[42px] md:text-[64px] leading-none">NORTHLINE <span class="italic text-ivory/50">REALTY</span></p>
-      <p class="text-[12px] tracking-[0.24em] uppercase text-ivory/45">Москва · Россия — © 2026</p>
+      <p class="text-[12px] tracking-[0.24em] uppercase text-ivory/45">Москва · Россия: © 2026</p>
     </div>
     <div class="pt-8 flex flex-col md:flex-row gap-4 md:items-center justify-between text-[12px] tracking-[0.16em] uppercase text-ivory/40">
       <div class="flex flex-wrap gap-x-8 gap-y-2"><a href="#objects" class="hover:text-ivory">Объекты</a><a href="#about" class="hover:text-ivory">О компании</a><a href="#journal" class="hover:text-ivory">Journal</a><a href="#contact" class="hover:text-ivory">Контакты</a></div>
@@ -619,22 +619,22 @@ tailwind.config = {
 </div>
 
 <script>
-// каталог объектов (merged: 8 адресов из 123.html — основной каталог)
+// каталог объектов (merged: 8 адресов из 123.html, основной каталог)
 const PROPERTIES = [
   { id:1, title:"Пентхаус на Остоженке", district:"Остоженка", deal:"buy", price:185000000, area:420, rooms:5, bedrooms:4, floor:"8 / 8", img:"https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=1600&auto=format&fit=crop", tag:"Флагман", desc:"Верхний этаж клубного дома с террасой 110 м² и видом на Зачатьевский монастырь. Дуб, травертин, камин, приватный лифт. Два машиноместа и келлер в паркинге." },
   { id:2, title:"Квартира с видом на Москву-реку", district:"Якиманка", deal:"buy", price:145000000, area:210, rooms:4, bedrooms:3, floor:"14 / 19", img:"https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=1600&auto=format&fit=crop", tag:"Вид на воду", desc:"Панорамные окна на стрелку Болотного острова. Гостиная 68 м², кухня Boffi, мастер-блок с гардеробной. Дом с лобби 24/7 и внутренним двором." },
   { id:3, title:"Дом в Серебряном Бору", district:"Серебряный Бор", deal:"buy", price:220000000, area:480, rooms:5, bedrooms:5, floor:"3 уровня", img:"https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1600&auto=format&fit=crop", tag:"Лес у воды", desc:"Резиденция на 24 сотках соснового леса в двух шагах от пляжа. Спа с бассейном 18 м, каминный зал со вторым светом, гостевой дом. Полная приватность." },
-  { id:4, title:"Апартаменты в Хамовниках", district:"Хамовники", deal:"buy", price:98000000, area:156, rooms:3, bedrooms:2, floor:"6 / 9", img:"https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?q=80&w=1600&auto=format&fit=crop", tag:"Тихий двор", desc:"Светлая квартира в клубном квартале у Новодевичьего парка. Потолки 3.4 м, эркер, библиотека. Идеальна для семьи: школа и парк — пешком." },
-  { id:5, title:"Квартира на Патриарших", district:"Патриаршие", deal:"buy", price:89000000, area:124, rooms:3, bedrooms:2, floor:"5 / 7", img:"https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1600&auto=format&fit=crop", tag:"Исторический дом", desc:"Отреставрированный доходный дом 1908 года. Лепнина, паркет, окна во двор-колодец тишины. Пруды — из подъезда налево." },
+  { id:4, title:"Апартаменты в Хамовниках", district:"Хамовники", deal:"buy", price:98000000, area:156, rooms:3, bedrooms:2, floor:"6 / 9", img:"https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?q=80&w=1600&auto=format&fit=crop", tag:"Тихий двор", desc:"Светлая квартира в клубном квартале у Новодевичьего парка. Потолки 3.4 м, эркер, библиотека. Идеальна для семьи: школа и парк: пешком." },
+  { id:5, title:"Квартира на Патриарших", district:"Патриаршие", deal:"buy", price:89000000, area:124, rooms:3, bedrooms:2, floor:"5 / 7", img:"https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1600&auto=format&fit=crop", tag:"Исторический дом", desc:"Отреставрированный доходный дом 1908 года. Лепнина, паркет, окна во двор-колодец тишины. Пруды: из подъезда налево." },
   { id:6, title:"Лофт на Арбате", district:"Арбат", deal:"rent", price:750000, area:180, rooms:2, bedrooms:1, floor:"4 / 6", img:"https://images.unsplash.com/photo-1600573472592-401b489a3cdc?q=80&w=1600&auto=format&fit=crop", tag:"Аренда", desc:"Двухуровневый лофт с потолками 5.2 м и кирпичом 1930-х. Меблирован B&B Italia. Возможна аренда от 6 месяцев, pets friendly." },
-  { id:7, title:"Резиденция в Замоскворечье", district:"Замоскворечье", deal:"rent", price:520000, area:142, rooms:3, bedrooms:2, floor:"9 / 12", img:"https://images.unsplash.com/photo-1600566752355-35792bedcfea?q=80&w=1600&auto=format&fit=crop", tag:"Аренда", desc:"Тихая резиденция с камином и видом на купола. Полностью сервисный дом: клининг, консьерж, паркинг. Заезд — за неделю." },
+  { id:7, title:"Резиденция в Замоскворечье", district:"Замоскворечье", deal:"rent", price:520000, area:142, rooms:3, bedrooms:2, floor:"9 / 12", img:"https://images.unsplash.com/photo-1600566752355-35792bedcfea?q=80&w=1600&auto=format&fit=crop", tag:"Аренда", desc:"Тихая резиденция с камином и видом на купола. Полностью сервисный дом: клининг, консьерж, паркинг. Заезд: за неделю." },
   { id:8, title:"Пентхаус в Москва-Сити", district:"Пресня", deal:"rent", price:1200000, area:310, rooms:4, bedrooms:3, floor:"62 / 75", img:"https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1600&auto=format&fit=crop", tag:"Skyline", desc:"Небо над городом: 62 этаж, 270° остекления, терраса с камином. Приватный кинозал, винная комната. Самый тихий этаж башни." },
 ];
 
 const state = { deal:"buy", district:"all", rooms:"all", area:"all", maxPrice:250000000, favOnly:false };
 const FAV_KEY = "northline_favs_v1"; // ключ не менять, а то у людей избранное слетит
 let favorites = new Set();
-// подгружаем избранное, если там мусор — просто сбрасываем
+// подгружаем избранное, если там мусор: просто сбрасываем
 try { favorites = new Set(JSON.parse(localStorage.getItem(FAV_KEY) || "[]")); } catch(e){ favorites = new Set(); }
 
 const $ = s => document.querySelector(s);
@@ -694,7 +694,7 @@ function updatePriceLabel(){
 }
 
 /* ---- фильтры ---- */
-// порядок важен: сначала избранное, потом сделка — так быстрее отсекает
+// порядок важен: сначала избранное, потом сделка: так быстрее отсекает
 function filtered(){
   return PROPERTIES.filter(p=>{
     if(state.favOnly && !favorites.has(p.id)) return false;
@@ -789,7 +789,7 @@ $("#favOnlyBtn").addEventListener("click", function(){
 $("#favHeaderBtn").addEventListener("click", ()=>{
   document.querySelector("#search").scrollIntoView({behavior:"smooth"});
   if(!state.favOnly && favorites.size>0){ $("#favOnlyBtn").click(); }
-  else if(favorites.size===0){ toast("Избранное пока пусто — нажмите ♡ на объекте"); }
+  else if(favorites.size===0){ toast("Избранное пока пусто, нажмите ♡ на объекте"); }
 });
 
 /* ---- избранное + открытие ---- */
@@ -845,10 +845,10 @@ function openProperty(id){
     <div><p class="serif text-[22px] md:text-[26px]">${p.rooms}</p><p class="text-[10px] tracking-[0.2em] uppercase text-ink/45 mt-1">комнаты</p></div>
     <div><p class="serif text-[22px] md:text-[26px]">${p.floor}</p><p class="text-[10px] tracking-[0.2em] uppercase text-ink/45 mt-1">этаж</p></div>`;
   const favB = $("#pmFav");
-  const syncFav = ()=>{ const on=favorites.has(p.id); favB.innerHTML = on ? "♥ В избранном — убрать" : "♡ В избранное"; };
+  const syncFav = ()=>{ const on=favorites.has(p.id); favB.innerHTML = on ? "♥ В избранном: убрать" : "♡ В избранное"; };
   syncFav();
   favB.onclick = ()=>{ favorites.has(p.id)?favorites.delete(p.id):favorites.add(p.id); saveFavs(); syncFav(); render(); toast(favorites.has(p.id)?"Добавлено в избранное":"Убрано из избранного"); };
-  $("#pmPresent").onclick = ()=>{ closeProperty(); document.querySelector("#contact").scrollIntoView({behavior:"smooth"}); setTimeout(()=>toast("Оставьте контакт — вышлем PDF-презентацию"),700); };
+  $("#pmPresent").onclick = ()=>{ closeProperty(); document.querySelector("#contact").scrollIntoView({behavior:"smooth"}); setTimeout(()=>toast("Оставьте контакт, вышлем PDF-презентацию"),700); };
   pm.classList.remove("modal-hidden");
   document.body.style.overflow="hidden";
   pm.querySelector("[data-close-property]").focus?.();
