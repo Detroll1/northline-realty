@@ -129,7 +129,7 @@ tailwind.config = {
   .fav-btn.active svg{ fill:#101010; stroke:#101010; }
   .fav-btn.active{ background:#F5F1E8 !important; }
   /* затемнение снизу на hero чтобы текст читался, без градиентной жести */
-  .legibility{ background:linear-gradient(to top, rgba(10,10,10,.58) 0%, rgba(10,10,10,.18) 42%, rgba(10,10,10,0) 70%); }
+  .legibility{ background:linear-gradient(to right, rgba(10,10,10,.42) 0%, rgba(10,10,10,.22) 50%, rgba(10,10,10,0) 80%), linear-gradient(to top, rgba(10,10,10,.72) 0%, rgba(10,10,10,.36) 45%, rgba(10,10,10,0) 75%); }
   .legibility-top{ background:linear-gradient(to bottom, rgba(10,10,10,.38) 0%, rgba(10,10,10,0) 32%); }
   /* бегущая строка с районами, 32с: медленнее уже скучно */
   @keyframes marquee { from{ transform:translateX(0)} to{ transform:translateX(-50%)} }
@@ -302,7 +302,7 @@ tailwind.config = {
             <select id="areaSel" class="lux-select" aria-label="Площадь">
               <option value="all">Любая</option>
               <option value="0-120">до 120 м²</option>
-              <option value="120-200">120: 200 м²</option>
+              <option value="120-200">120-200 м²</option>
               <option value="200-9999">от 200 м²</option>
             </select>
           </div>
@@ -328,7 +328,7 @@ tailwind.config = {
 <section id="objects" class="max-w-[1560px] mx-auto px-6 md:px-10 lg:px-14 pt-10 md:pt-16 pb-10">
   <div class="flex items-end justify-between mb-8 md:mb-12 reveal">
     <h3 class="serif text-[28px] md:text-[40px] leading-tight">Избранные адреса <span class="italic text-warm">сезона</span></h3>
-    <span class="hidden md:block text-[11px] tracking-[0.28em] uppercase text-warm">N° 01: 08</span>
+    <span class="hidden md:block text-[11px] tracking-[0.28em] uppercase text-warm">N° 01 / 08</span>
   </div>
   <div id="propertyGrid" class="grid grid-cols-1 md:grid-cols-2 gap-x-6 lg:gap-x-10 gap-y-12 md:gap-y-16" aria-live="polite"></div>
   <div id="emptyState" class="hidden text-center py-24 border border-dashed border-ink/20 mt-4">
@@ -376,7 +376,7 @@ tailwind.config = {
     <div class="lg:col-span-7 reveal">
       <p class="text-[11px] tracking-[0.3em] uppercase text-warm mb-6">02: Философия</p>
       <h2 class="serif text-[40px] md:text-[64px] leading-[1.04]">Мы не продаём<br/>квадратные метры.</h2>
-      <p class="mt-8 text-[16px] md:text-[18px] leading-[1.75] text-ink/70 font-light max-w-[58ch]">Мы подбираем ритм жизни: свет утром в спальне, тишину двора, пять минут до парка, вид, к которому возвращаешься мыслями. Northline: бутик-бюро: один брокер ведёт вас от первого звонка до ключей и остаётся рядом после сделки.</p>
+      <p class="mt-8 text-[16px] md:text-[18px] leading-[1.75] text-ink/70 font-light max-w-[58ch]">Мы подбираем ритм жизни: свет утром в спальне, тишину двора, пять минут до парка, вид, к которому возвращаешься мыслями. Northline, бутик-бюро: один брокер ведёт вас от первого звонка до ключей и остаётся рядом после сделки.</p>
       <p class="mt-5 text-[16px] md:text-[18px] leading-[1.75] text-ink/70 font-light max-w-[58ch]">Работаем с ограниченным числом адресов и не гонимся за витриной. Поэтому нас рекомендуют.</p>
     </div>
     <div class="lg:col-span-5 flex flex-col justify-end">
@@ -420,10 +420,10 @@ tailwind.config = {
   <div class="mt-14 md:mt-20 grid lg:grid-cols-12 gap-10">
     <div class="hidden lg:flex lg:col-span-1 justify-center"><div class="w-px bg-[#D8D0BE] relative flex-1 max-w-px"><div id="processProgress" class="absolute top-0 left-0 w-full bg-ink" style="height:0%"></div></div></div>
     <div class="lg:col-span-11 divide-y divide-[#D8D0BE] border-y border-[#D8D0BE]">
-      <div class="process-step reveal grid md:grid-cols-12 gap-4 py-9 md:py-12 items-baseline"><span class="md:col-span-2 serif italic text-[20px] text-warm">01</span><h3 class="md:col-span-4 serif text-[28px] md:text-[34px]">Знакомство</h3><p class="md:col-span-6 text-ink/60 leading-relaxed font-light">Часовой разговор о привычках, маршрутах и свете. Фиксируем критерии: и отсекаем лишнее.</p></div>
+      <div class="process-step reveal grid md:grid-cols-12 gap-4 py-9 md:py-12 items-baseline"><span class="md:col-span-2 serif italic text-[20px] text-warm">01</span><h3 class="md:col-span-4 serif text-[28px] md:text-[34px]">Знакомство</h3><p class="md:col-span-6 text-ink/60 leading-relaxed font-light">Часовой разговор о привычках, маршрутах и свете. Фиксируем критерии и отсекаем лишнее.</p></div>
       <div class="process-step reveal grid md:grid-cols-12 gap-4 py-9 md:py-12 items-baseline"><span class="md:col-span-2 serif italic text-[20px] text-warm">02</span><h3 class="md:col-span-4 serif text-[28px] md:text-[34px]">Подбор</h3><p class="md:col-span-6 text-ink/60 leading-relaxed font-light">До 7 точных вариантов, включая закрытые. Личные просмотры с брокером, без суеты.</p></div>
       <div class="process-step reveal grid md:grid-cols-12 gap-4 py-9 md:py-12 items-baseline"><span class="md:col-span-2 serif italic text-[20px] text-warm">03</span><h3 class="md:col-span-4 serif text-[28px] md:text-[34px]">Переговоры</h3><p class="md:col-span-6 text-ink/60 leading-relaxed font-light">Юридическая проверка, торг, структура сделки. Вы всегда знаете следующую ставку.</p></div>
-      <div class="process-step reveal grid md:grid-cols-12 gap-4 py-9 md:py-12 items-baseline"><span class="md:col-span-2 serif italic text-[20px] text-warm">04</span><h3 class="md:col-span-4 serif text-[28px] md:text-[34px]">Сделка</h3><p class="md:col-span-6 text-ink/60 leading-relaxed font-light">Нотариат, регистрация, передача ключей. Дизайн, переезд и управление: по запросу.</p></div>
+      <div class="process-step reveal grid md:grid-cols-12 gap-4 py-9 md:py-12 items-baseline"><span class="md:col-span-2 serif italic text-[20px] text-warm">04</span><h3 class="md:col-span-4 serif text-[28px] md:text-[34px]">Сделка</h3><p class="md:col-span-6 text-ink/60 leading-relaxed font-light">Нотариат, регистрация, передача ключей. Дизайн, переезд и управление по запросу.</p></div>
     </div>
   </div>
 </section>
@@ -463,15 +463,15 @@ tailwind.config = {
     <div id="tTrack" class="flex">
       <figure class="w-full shrink-0 px-2 md:px-10">
         <blockquote class="serif text-[28px] md:text-[44px] leading-[1.25]">«Northline поняли, что мы ищем, раньше, чем мы сами это сформулировали.»</blockquote>
-        <figcaption class="mt-7 text-[12px] tracking-[0.22em] uppercase text-ink/50">Анна и Дмитрий: покупатели · Хамовники</figcaption>
+        <figcaption class="mt-7 text-[12px] tracking-[0.22em] uppercase text-ink/50">Анна и Дмитрий, покупатели · Хамовники</figcaption>
       </figure>
       <figure class="w-full shrink-0 px-2 md:px-10">
-        <blockquote class="serif text-[28px] md:text-[44px] leading-[1.25]">«Три просмотра: и ключи. Ни одного лишнего звонка за два месяца.»</blockquote>
-        <figcaption class="mt-7 text-[12px] tracking-[0.22em] uppercase text-ink/50">Игорь С.: владелец · Остоженка</figcaption>
+        <blockquote class="serif text-[28px] md:text-[44px] leading-[1.25]">«Три просмотра, и ключи. Ни одного лишнего звонка за два месяца.»</blockquote>
+        <figcaption class="mt-7 text-[12px] tracking-[0.22em] uppercase text-ink/50">Игорь С., владелец · Остоженка</figcaption>
       </figure>
       <figure class="w-full shrink-0 px-2 md:px-10">
         <blockquote class="serif text-[28px] md:text-[44px] leading-[1.25]">«Продали на 12% выше рынка. Спокойно, точно, без компромиссов.»</blockquote>
-        <figcaption class="mt-7 text-[12px] tracking-[0.22em] uppercase text-ink/50">Марина В.: продавец · Патриаршие</figcaption>
+        <figcaption class="mt-7 text-[12px] tracking-[0.22em] uppercase text-ink/50">Марина В., продавец · Патриаршие</figcaption>
       </figure>
     </div>
   </div>
@@ -585,7 +585,7 @@ tailwind.config = {
   <div class="modal-backdrop absolute inset-0" data-close-property></div>
   <div class="modal-panel relative bg-ivory w-full max-w-[1080px] max-h-[92vh] overflow-y-auto grid md:grid-cols-2">
     <div class="relative min-h-[300px] md:min-h-[560px]">
-      <img id="pmImg" src="" alt="" class="absolute inset-0 w-full h-full object-cover" />
+      <img id="pmImg" alt="" class="absolute inset-0 w-full h-full object-cover" />
       <span id="pmTag" class="absolute top-5 left-5 bg-ivory text-ink text-[11px] tracking-[0.2em] uppercase px-4 py-2"></span>
     </div>
     <div class="p-7 md:p-12">
